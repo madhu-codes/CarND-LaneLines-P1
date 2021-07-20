@@ -14,15 +14,15 @@ The goals / steps of this project are the following:
 ### Reflection
 
 ### Pipeline Description: My pipeline consists of the following steps:
-1. Make a copy of the original image
-2. Convert the image to grayscale
-3. Gaussian blur on the grascale image
-4. Apply the Canny function on the blurred image to find the edges
-5. Select the region of interest (roi) and mask out the rest of the image
+- Make a copy of the original image
+- Convert the image to grayscale
+- Gaussian blur on the grascale image
+- Apply the Canny function on the blurred image to find the edges
+- Select the region of interest (roi) and mask out the rest of the image
    Here a triangular region which contains the bottom half of the image is considered as the roi
-6. Define the Hough transform parameters (the code has been commented to indicate the chosen parameters for the Hough Transform)
-7. Run Hough on the detected image
-8. Overlay the hough lines image on the original image
+- Define the Hough transform parameters (the code has been commented to indicate the chosen parameters for the Hough Transform)
+- Run Hough on the detected image
+- Overlay the hough lines image on the original image
 
 
 In order to draw a single line on the left and right lanes, I modified the draw_lines() as follows:
@@ -45,6 +45,3 @@ In order to draw a single line on the left and right lanes, I modified the draw_
  - A possible improvement would be to store the average slope and y-intercept values across the frames and then take the average so that we use the 
    history across the frames, making it more robust.
 
-
-
-Another potential improvement could be to ...
